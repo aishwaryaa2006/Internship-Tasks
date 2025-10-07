@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --background: #E8F6EF;   
+  --text: #2C3E50;         
+  --highlight: #1ABC9C;      
+  --headings: #032e24; 
+  --font-heading: "Playfair Display", sans-serif;
+  --font-body: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+h2{
+  color: var(--headings);
+  font-family: var(--font-body);
+  font-size: 30px;
+}
+h4{
+  margin-top: 10px;
+}
+
+.highlight{
+  color: var(--highlight);
+  font-family: var(--font-heading);
+  font-size: 35px;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.card{
+    background-color: white;
+    padding: 10px 10px 20px 10px;
+    border-radius: 20px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition:  height 1s ease;
+}
+
+.card img{
+    width: 250px;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.icon-bg{
+    background-color: var(--highlight);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 5px;
+    transition: 0.5s;
+    flex-shrink: 0;
+}
+
+.icon-bg:hover{
+    background-color: #032e24;
+}
+
+.fa-solid{
+    cursor: pointer;
+    color: rgb(250, 250, 250);
+}
+
+
+
